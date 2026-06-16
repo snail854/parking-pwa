@@ -74,19 +74,10 @@
   <div class="status">자동 로그인 중...</div>
   <div class="spinner"></div>
 
-  <!-- 자동 로그인 폼 (숨김) -->
-  <form id="loginForm"
-        action="http://mitower.iptime.org/WDC/login.do"
-        method="POST"
-        style="display:none;">
-    <input type="hidden" name="userID" value="123456">
-    <input type="hidden" name="userPassword" value="123456">
-    <input type="hidden" name="remember" value="yes">
-  </form>
-
   <script>
+    // 로그인 페이지로 직접 이동 (단축어 자동화가 나머지 처리)
     setTimeout(function() {
-      document.getElementById('loginForm').submit();
+      window.location.href = 'http://mitower.iptime.org/WDC/login.jsp';
     }, 500);
   </script>
 </body>
